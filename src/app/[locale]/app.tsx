@@ -1,6 +1,22 @@
+import { ChangeLanguage } from '@/components/ChangeLanguage';
 import { useTranslations } from 'next-intl';
 
 export default function HomePage() {
+
     const t = useTranslations('HomePage');
-    return <h1>{t('title')}</h1>;
+
+    return (
+        <>
+            <nav>
+                <ChangeLanguage />
+            </nav>
+
+            <main>
+
+            </main>
+            <footer>
+
+            </footer>
+        </>
+    );
 }
