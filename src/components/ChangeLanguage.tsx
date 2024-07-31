@@ -25,7 +25,7 @@ export const ChangeLanguage = () => {
                 </button>
             </div>
             {
-                openLanguageMenu && <div className='z-[997] fixed w-full top-0 bottom-0 left-0 bg-black bg-opacity-25 flex justify-center items-center'>
+                openLanguageMenu && <div className='z-[997] text-black fixed w-full top-0 bottom-0 left-0 bg-black bg-opacity-25 flex justify-center items-center'>
                     <div onClick={() => { setopenLanguageMenu(false) }} className='cursor-pointer z-[998] fixed w-full top-0 bottom-0 left-0'></div>
                     <div className='bg-white p-10 rounded z-[999] overflow-y-scroll lg:overflow-hidden max-h-[80vh]'>
                         <h3 className='font-bold mb-8 text-xl'>Change language</h3>
