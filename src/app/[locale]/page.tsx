@@ -15,13 +15,13 @@ export default function HomePage() {
 
     return (
         <>
-            <nav className='bg-black text-white 2x:px-[30%] lg:px-[25%] px-[10%] flex justify-end items-center py-10 w-full mb-10'>
+            <nav className='bg-black text-white 2x:px-[30%] lg:px-[25%] px-[10%] flex justify-end items-center pt-10 w-full pb-20'>
                 <ChangeLanguage
                     title={homePage("changeLanguage")}
                 />
             </nav>
 
-            <main className='bg-black text-white 2x:px-[30%] lg:px-[25%] px-[10%] flex flex-col items-center justify-center mb-[9rem]'>
+            <main className='bg-black text-white 2x:px-[30%] lg:px-[25%] px-[10%] flex flex-col items-center justify-center pb-[9rem]'>
                 <h1 className={`${delaGothic.className} text-center font-bold text-xl mb-10`}>MOVETE</h1>
                 <h2
                     className={`font-bold text-[2.1rem] mb-4 text-center ${delaGothic.className}`}
