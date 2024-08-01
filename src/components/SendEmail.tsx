@@ -9,7 +9,11 @@ export const SendEmail = ({ buttonText, placeholderText, errorLong, errorShort, 
     const [email, setEmail] = useState("");
     const [emailError, setemailError] = useState("");
     const [isLoading, setisLoading] = useState(false);
+
+    // alert states
     const [showAlert, setShowAlert] = useState(false);
+    const [messageOfAlert, setMessageOfAlert] = useState("");
+    const [messageIsError, setmessageIsError] = useState(false);
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -46,7 +50,10 @@ export const SendEmail = ({ buttonText, placeholderText, errorLong, errorShort, 
 
         if (emailToSend.length === 0 || emailToSend.length > 100 || !emailRegex.test(emailToSend)) {
             setisLoading(false);
-            //show error
+            setShowAlert(true);
+            setMessageOfAlert("We are sorry but the email you entered is invalid, please try another one.");
+            setmessageIsError(true);
+            //error message
             return;
         }
 
@@ -56,15 +63,24 @@ export const SendEmail = ({ buttonText, placeholderText, errorLong, errorShort, 
 
             if (result.isError === "") {
                 setisLoading(false);
+                setShowAlert(true);
+                setMessageOfAlert("Welcome to the Movete community, we will notify you by email when everything is ready and don't forget to keep training hard.");
+                setmessageIsError(false);
                 // success message
             } else {
                 setisLoading(false);
+                setShowAlert(true);
+                setMessageOfAlert("Sorry, there seems to have been an error, please try again or try again later.");
+                setmessageIsError(true);
                 // error message
             }
 
         } catch (error) {
             setisLoading(false);
             console.log("error front, adding the email");
+            setShowAlert(true);
+            setMessageOfAlert("Sorry, there seems to have been an error, please try again or try again later.");
+            setmessageIsError(true);
             // error message
         }
 
@@ -81,9 +97,8 @@ export const SendEmail = ({ buttonText, placeholderText, errorLong, errorShort, 
                 showAlert &&
                 <Alert
                     setCloseModal={setShowAlert}
-                    title='asd'
-                    message='dsf'
-                    isError={false}
+                    message={messageOfAlert}
+                    isError={messageIsError}
                 />
             }
 
