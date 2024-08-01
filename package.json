@@ -19,7 +19,8 @@
     "next-intl": "^3.17.2",
     "npm": "^10.8.2",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-spinners": "^0.14.1"
   },
   "devDependencies": {
     "@types/node": "^20",

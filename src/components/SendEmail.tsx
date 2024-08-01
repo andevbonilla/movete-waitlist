@@ -1,11 +1,13 @@
 "use client"
 import { addNewEmail } from '@/lib/request/addNewEmail';
 import React, { useState } from 'react'
+import { Loading } from './Loading';
 
 export const SendEmail = ({ buttonText, placeholderText, errorLong, errorShort, errorInvalid }: { buttonText: string, placeholderText: string, errorLong: string, errorShort: string, errorInvalid: string }) => {
 
     const [email, setEmail] = useState("");
     const [emailError, setemailError] = useState("");
+    const [isLoading, setisLoading] = useState(false);
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -37,9 +39,12 @@ export const SendEmail = ({ buttonText, placeholderText, errorLong, errorShort, 
 
         e.preventDefault();
 
+        setisLoading(true);
         let emailToSend = email.toLowerCase();
 
         if (emailToSend.length === 0 || emailToSend.length > 100 || !emailRegex.test(emailToSend)) {
+            setisLoading(false);
+            //show error
             return;
         }
 
@@ -48,19 +53,27 @@ export const SendEmail = ({ buttonText, placeholderText, errorLong, errorShort, 
             const result = await addNewEmail(emailToSend);
 
             if (result.isError === "") {
+                setisLoading(false);
                 // success message
             } else {
+                setisLoading(false);
                 // error message
             }
 
         } catch (error) {
+            setisLoading(false);
             console.log("error front, adding the email");
             // error message
         }
 
     }
 
+    if (isLoading) {
+        return <Loading />
+    }
+
     return (
+
         <form
             onSubmit={saveEmail}
             className='w-full md:px-[10%]'
@@ -88,6 +101,7 @@ export const SendEmail = ({ buttonText, placeholderText, errorLong, errorShort, 
             }
 
         </form>
+
     );
 
 }
