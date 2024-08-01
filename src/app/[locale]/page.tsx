@@ -14,13 +14,13 @@ export default function HomePage() {
 
     return (
         <>
-            <nav className='bg-black text-white 2x:px-[30%] lg:px-[25%] px-[10%] flex justify-end items-center py-10 w-full'>
+            <nav className='bg-black text-white 2x:px-[30%] lg:px-[25%] px-[10%] flex justify-end items-center py-10 w-full mb-10'>
                 <ChangeLanguage
                     title={homePage("changeLanguage")}
                 />
             </nav>
 
-            <main className='bg-black text-white 2x:px-[30%] lg:px-[25%] px-[10%] min-h-[80vh] flex flex-col items-center justify-center'>
+            <main className='bg-black text-white 2x:px-[30%] lg:px-[25%] px-[10%] flex flex-col items-center justify-center mb-[9rem]'>
                 <h1 className={`${delaGothic.className} text-center font-bold text-xl mb-10`}>MOVETE</h1>
                 <h2
                     className={`font-bold text-[2.1rem] mb-4 text-center ${delaGothic.className}`}
@@ -32,7 +32,7 @@ export default function HomePage() {
                     {homePage("text")}</p>
                 <div className='md:flex-row flex flex-col items-center justify-cente w-full px-[12%]'>
                     <input
-                        className='md:mr-2 py-3 px-5 rounded text-black text-opacity-90 w-full'
+                        className='md:mr-2 py-3 px-5 rounded text-black text-opacity-90 w-full bg-white'
                         name='email'
                         type="email"
                         placeholder={homePage("placeholderText")}
