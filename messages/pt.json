@@ -8,6 +8,11 @@
     "copyright": "Movete © Todos os direitos reservados.",
     "errorEmailLong": "O e-mail é obrigatório.",
     "errorEmailShort": "O e-mail é muito longo, por favor, tente outro.",
-    "errorEmailInvalid": "O e-mail é inválido."
+    "errorEmailInvalid": "O e-mail é inválido.",
+    "closeButton": "Fechar",
+    "successTitle": "Obrigado",
+    "errorTitle": "Erro",
+    "successMessage": "Bem-vindo à comunidade Movete, notificaremos você por e-mail quando tudo estiver pronto e não se esqueça de continuar treinando duro.",
+    "generalError": "Desculpe, parece que houve um erro, por favor tente novamente ou tente novamente mais tarde."
   }
 }

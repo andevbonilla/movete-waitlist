@@ -8,6 +8,11 @@
     "copyright": "Movete © 版权所有。",
     "errorEmailLong": "需要电子邮件。",
     "errorEmailShort": "电子邮件太长，请尝试另一个。",
-    "errorEmailInvalid": "电子邮件无效。"
+    "errorEmailInvalid": "电子邮件无效。",
+    "closeButton": "关闭",
+    "successTitle": "谢谢",
+    "errorTitle": "错误",
+    "successMessage": "欢迎加入Movete社区，我们会在一切准备就绪时通过电子邮件通知您，请不要忘记继续努力训练。",
+    "generalError": "抱歉，似乎发生了错误，请再试一次或稍后再试。"
   }
 }

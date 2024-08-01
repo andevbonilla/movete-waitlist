@@ -8,6 +8,11 @@
     "copyright": "Movete © すべての権利予約済み。",
     "errorEmailLong": "メールアドレスは必須です。",
     "errorEmailShort": "メールアドレスが長すぎます。他のものを試してください。",
-    "errorEmailInvalid": "メールアドレスが無効です。"
+    "errorEmailInvalid": "メールアドレスが無効です。",
+    "closeButton": "閉じる",
+    "successTitle": "ありがとう",
+    "errorTitle": "エラー",
+    "successMessage": "Moveteコミュニティへようこそ、すべてが準備できたらメールでお知らせしますので、引き続きハードトレーニングをお忘れなく。",
+    "generalError": "申し訳ありませんが、エラーが発生したようです。もう一度お試しいただくか、後で再度お試しください。"
   }
 }

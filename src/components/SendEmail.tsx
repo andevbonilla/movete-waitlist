@@ -51,7 +51,7 @@ export const SendEmail = ({ buttonText, placeholderText, errorLong, errorShort, 
         if (emailToSend.length === 0 || emailToSend.length > 100 || !emailRegex.test(emailToSend)) {
             setisLoading(false);
             setShowAlert(true);
-            setMessageOfAlert("We are sorry but the email you entered is invalid, please try another one.");
+            setMessageOfAlert(errorInvalid);
             setmessageIsError(true);
             //error message
             return;
@@ -77,7 +77,6 @@ export const SendEmail = ({ buttonText, placeholderText, errorLong, errorShort, 
 
         } catch (error) {
             setisLoading(false);
-            console.log("error front, adding the email");
             setShowAlert(true);
             setMessageOfAlert("Sorry, there seems to have been an error, please try again or try again later.");
             setmessageIsError(true);
