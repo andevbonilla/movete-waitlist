@@ -1,6 +1,7 @@
 import { ChangeLanguage } from '@/components/ChangeLanguage';
 import { useTranslations } from 'next-intl';
 import { Dela_Gothic_One } from '@next/font/google';
+import { SendEmail } from '@/components/SendEmail';
 
 const delaGothic = Dela_Gothic_One({
     weight: ["400"], // bold de la fuente
@@ -30,20 +31,11 @@ export default function HomePage() {
                     className='text-opacity-85 mb-10 text-center px-[2rem]'
                 >
                     {homePage("text")}</p>
-                <div className='md:flex-row flex flex-col items-center justify-cente w-full px-[12%]'>
-                    <input
-                        className='md:mr-2 py-3 px-5 rounded text-black text-opacity-90 w-full bg-white'
-                        name='email'
-                        type="email"
-                        placeholder={homePage("placeholderText")}
-                    />
-                    <button
-                        type='button'
-                        className='md:mt-0 hover:bg-[#00CE74] mt-4 duration-200 bg-[#00FF8F] rounded py-3 px-5 font-bold w-full'
-                    >
-                        {homePage("buttonText")}
-                    </button>
-                </div>
+
+                <SendEmail
+                    placeholderText={homePage("placeholderText")}
+                    buttonText={homePage("buttonText")}
+                />
 
 
             </main>
