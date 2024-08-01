@@ -1,4 +1,5 @@
 "use client"
+import { addNewEmail } from '@/lib/request/addNewEmail';
 import React, { useState } from 'react'
 
 export const SendEmail = ({ buttonText, placeholderText, errorLong, errorShort, errorInvalid }: { buttonText: string, placeholderText: string, errorLong: string, errorShort: string, errorInvalid: string }) => {
@@ -6,9 +7,10 @@ export const SendEmail = ({ buttonText, placeholderText, errorLong, errorShort, 
     const [email, setEmail] = useState("");
     const [emailError, setemailError] = useState("");
 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     const realTimeErrorEmail = (e: any) => {
 
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         let newValue = e.target.value;
         setEmail(newValue);
 
@@ -31,14 +33,30 @@ export const SendEmail = ({ buttonText, placeholderText, errorLong, errorShort, 
 
     }
 
-    const saveEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    const saveEmail = async (e: React.FormEvent<HTMLFormElement>) => {
+
         e.preventDefault();
 
-        if (email.length === 0) {
-            setemailError("");
+        let emailToSend = email.toLowerCase();
+
+        if (emailToSend.length === 0 || emailToSend.length > 100 || !emailRegex.test(emailToSend)) {
             return;
         }
 
+        try {
+
+            const result = await addNewEmail(emailToSend);
+
+            if (result.isError === "") {
+                // success message
+            } else {
+                // error message
+            }
+
+        } catch (error) {
+            console.log("error front, adding the email");
+            // error message
+        }
 
     }
 

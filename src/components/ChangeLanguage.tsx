@@ -32,49 +32,49 @@ export const ChangeLanguage = ({ title }: { title: any }) => {
                         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 bg-white'>
                             <Link
                                 href={currentUrl.replace(params.locale, "en")}
-                                className={`${(location.pathname.startsWith("/en")) ? "bg-slate-300" : ""} hover:bg-slate-300 transition-all p-4 rounded bg-white`}
+                                className={`${(params.locale.startsWith("en")) ? "bg-slate-300" : ""} hover:bg-slate-300 transition-all p-4 rounded bg-white`}
                             >
                                 English
                             </Link>
                             <Link
                                 href={currentUrl.replace(params.locale, "es")}
-                                className={`${(location.pathname.startsWith("/es")) ? "bg-slate-300" : ""} hover:bg-slate-300 transition-all p-4 rounded bg-white`}
+                                className={`${(params.locale.startsWith("es")) ? "bg-slate-300" : ""} hover:bg-slate-300 transition-all p-4 rounded bg-white`}
                             >
                                 Español
                             </Link>
                             <Link
                                 href={currentUrl.replace(params.locale, "fr")}
-                                className={`${(location.pathname.startsWith("/fr")) ? "bg-slate-300" : ""} hover:bg-slate-300 transition-all p-4 rounded bg-white`}
+                                className={`${(params.locale.startsWith("fr")) ? "bg-slate-300" : ""} hover:bg-slate-300 transition-all p-4 rounded bg-white`}
                             >
                                 Français
                             </Link>
                             <Link
                                 href={currentUrl.replace(params.locale, "zh")}
-                                className={`${(location.pathname.startsWith("/zh")) ? "bg-slate-300" : ""} hover:bg-slate-300 transition-all p-4 rounded bg-white`}
+                                className={`${(params.locale.startsWith("zh")) ? "bg-slate-300" : ""} hover:bg-slate-300 transition-all p-4 rounded bg-white`}
                             >
                                 中文繁體
                             </Link>
                             <Link
                                 href={currentUrl.replace(params.locale, "ja")}
-                                className={`${(location.pathname.startsWith("/ja")) ? "bg-slate-300" : ""} hover:bg-slate-300 transition-all p-4 rounded bg-white`}
+                                className={`${(params.locale.startsWith("ja")) ? "bg-slate-300" : ""} hover:bg-slate-300 transition-all p-4 rounded bg-white`}
                             >
                                 日本語
                             </Link>
                             <Link
                                 href={currentUrl.replace(params.locale, "pt")}
-                                className={`${(location.pathname.startsWith("/pt")) ? "bg-slate-300" : ""} hover:bg-slate-300 transition-all p-4 rounded bg-white`}
+                                className={`${(params.locale.startsWith("pt")) ? "bg-slate-300" : ""} hover:bg-slate-300 transition-all p-4 rounded bg-white`}
                             >
                                 Português
                             </Link>
                             <Link
                                 href={currentUrl.replace(params.locale, "hi")}
-                                className={`${(location.pathname.startsWith("/hi")) ? "bg-slate-300" : ""} hover:bg-slate-300 transition-all p-4 rounded bg-white`}
+                                className={`${(params.locale.startsWith("hi")) ? "bg-slate-300" : ""} hover:bg-slate-300 transition-all p-4 rounded bg-white`}
                             >
                                 हिंदी
                             </Link>
                             <Link
                                 href={currentUrl.replace(params.locale, "ru")}
-                                className={`${(location.pathname.startsWith("/ru")) ? "bg-slate-300" : ""} hover:bg-slate-300 transition-all p-4 rounded bg-white`}
+                                className={`${(params.locale.startsWith("ru")) ? "bg-slate-300" : ""} hover:bg-slate-300 transition-all p-4 rounded bg-white`}
                             >
                                 Русский
                             </Link>
