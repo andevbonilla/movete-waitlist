@@ -5,6 +5,9 @@
     "placeholderText": "メールアドレスを入力してください",
     "buttonText": "参加します",
     "changeLanguage": "言語を変更",
-    "copyright": "Movete © すべての権利予約済み。"
+    "copyright": "Movete © すべての権利予約済み。",
+    "errorEmailLong": "メールアドレスは必須です。",
+    "errorEmailShort": "メールアドレスが長すぎます。他のものを試してください。",
+    "errorEmailInvalid": "メールアドレスが無効です。"
   }
 }

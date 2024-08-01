@@ -4,4 +4,9 @@
 
 *{
     background-color: black;
+    user-select: none;
+}
+
+input {
+    outline: none; /* Elimina el borde resaltado al enfocar */
 }

@@ -5,6 +5,9 @@
     "placeholderText": "Escribe tu correo electronico",
     "buttonText": "Estoy adentro",
     "changeLanguage": "Cambiar idioma",
-    "copyright": "Movete © Todos los derechos reservados."
+    "copyright": "Movete © Todos los derechos reservados.",
+    "errorEmailLong": "El correo electrónico es requerido.",
+    "errorEmailShort": "El correo electrónico es demasiado largo, por favor intenta con otro.",
+    "errorEmailInvalid": "El correo electrónico es inválido."
   }
 }

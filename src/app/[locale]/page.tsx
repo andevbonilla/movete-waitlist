@@ -35,6 +35,9 @@ export default function HomePage() {
                 <SendEmail
                     placeholderText={homePage("placeholderText")}
                     buttonText={homePage("buttonText")}
+                    errorInvalid={homePage("errorEmailInvalid")}
+                    errorLong={homePage("errorEmailShort")}
+                    errorShort={homePage("errorEmailLong")}
                 />
 
 

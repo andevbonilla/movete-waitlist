@@ -5,6 +5,9 @@
     "placeholderText": "请输入您的电子邮箱",
     "buttonText": "我加入",
     "changeLanguage": "切换语言",
-    "copyright": "Movete © 版权所有。"
+    "copyright": "Movete © 版权所有。",
+    "errorEmailLong": "需要电子邮件。",
+    "errorEmailShort": "电子邮件太长，请尝试另一个。",
+    "errorEmailInvalid": "电子邮件无效。"
   }
 }

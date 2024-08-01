@@ -5,6 +5,9 @@
     "placeholderText": "Enter your email address",
     "buttonText": "I'm in",
     "changeLanguage": "Change language",
-    "copyright": "Movete © All rights reserved."
+    "copyright": "Movete © All rights reserved.",
+    "errorEmailLong": "The email is required.",
+    "errorEmailShort": "The email is too long, please try another one.",
+    "errorEmailInvalid": "The Email is invalid."
   }
 }

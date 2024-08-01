@@ -5,6 +5,9 @@
     "placeholderText": "Введите ваш электронный адрес",
     "buttonText": "Я внутри",
     "changeLanguage": "Сменить язык",
-    "copyright": "Movete © Все права защищены."
+    "copyright": "Movete © Все права защищены.",
+    "errorEmailLong": "Требуется электронная почта.",
+    "errorEmailShort": "Электронная почта слишком длинная, попробуйте другой адрес.",
+    "errorEmailInvalid": "Электронная почта недействительна."
   }
 }

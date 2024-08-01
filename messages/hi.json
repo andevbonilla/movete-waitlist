@@ -5,6 +5,9 @@
     "placeholderText": "अपना ईमेल पता लिखें",
     "buttonText": "मैं अंदर हूँ",
     "changeLanguage": "भाषा बदलें",
-    "copyright": "Movete © सर्वाधिकार सुरक्षित।"
+    "copyright": "Movete © सर्वाधिकार सुरक्षित।",
+    "errorEmailLong": "ईमेल आवश्यक है।",
+    "errorEmailShort": "ईमेल बहुत लंबा है, कृपया कोई अन्य आज़माएं।",
+    "errorEmailInvalid": "ईमेल अमान्य है।"
   }
 }
