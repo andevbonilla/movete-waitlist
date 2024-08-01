@@ -38,6 +38,11 @@ export default function HomePage() {
                     errorInvalid={homePage("errorEmailInvalid")}
                     errorLong={homePage("errorEmailShort")}
                     errorShort={homePage("errorEmailLong")}
+                    errorGeneral={homePage("generalError")}
+                    succcessMessage={homePage("successMessage")}
+                    closeButton={homePage("closeButton")}
+                    successTitle={homePage("successTitle")}
+                    errorTitle={homePage("errorTitle")}
                 />
 
 

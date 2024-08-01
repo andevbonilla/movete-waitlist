@@ -4,7 +4,29 @@ import React, { useState } from 'react'
 import { Loading } from './Loading';
 import { Alert } from './Alert';
 
-export const SendEmail = ({ buttonText, placeholderText, errorLong, errorShort, errorInvalid }: { buttonText: string, placeholderText: string, errorLong: string, errorShort: string, errorInvalid: string }) => {
+export const SendEmail = ({
+    buttonText,
+    placeholderText,
+    errorLong,
+    errorShort,
+    errorInvalid,
+    errorGeneral,
+    succcessMessage,
+    closeButton,
+    successTitle,
+    errorTitle,
+}: {
+    buttonText: string,
+    placeholderText: string,
+    errorLong: string,
+    errorShort: string,
+    errorInvalid: string,
+    errorGeneral: string,
+    succcessMessage: string,
+    closeButton: string,
+    successTitle: string,
+    errorTitle: string,
+}) => {
 
     const [email, setEmail] = useState("");
     const [emailError, setemailError] = useState("");
@@ -64,7 +86,7 @@ export const SendEmail = ({ buttonText, placeholderText, errorLong, errorShort, 
             if (result.isError === "") {
                 setisLoading(false);
                 setShowAlert(true);
-                setMessageOfAlert("Welcome to the Movete community, we will notify you by email when everything is ready and don't forget to keep training hard.");
+                setMessageOfAlert(succcessMessage);
                 setmessageIsError(false);
                 // success message
             } else {
@@ -78,7 +100,7 @@ export const SendEmail = ({ buttonText, placeholderText, errorLong, errorShort, 
         } catch (error) {
             setisLoading(false);
             setShowAlert(true);
-            setMessageOfAlert("Sorry, there seems to have been an error, please try again or try again later.");
+            setMessageOfAlert(errorGeneral);
             setmessageIsError(true);
             // error message
         }
@@ -98,6 +120,9 @@ export const SendEmail = ({ buttonText, placeholderText, errorLong, errorShort, 
                     setCloseModal={setShowAlert}
                     message={messageOfAlert}
                     isError={messageIsError}
+                    closeButton={closeButton}
+                    successTitle={successTitle}
+                    errorTitle={errorTitle}
                 />
             }
 

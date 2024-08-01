@@ -2,7 +2,21 @@
 import React from 'react';
 import Confetti from './ConfettiAnimation';
 
-export const Alert = ({ setCloseModal, message, isError }: { setCloseModal: any, message: string, isError: boolean }) => {
+export const Alert = ({
+    setCloseModal,
+    message,
+    isError,
+    closeButton,
+    successTitle,
+    errorTitle
+}: {
+    setCloseModal: any,
+    message: string,
+    isError: boolean,
+    closeButton: string,
+    successTitle: string,
+    errorTitle: string
+}) => {
     return (
         <>
 
@@ -17,7 +31,7 @@ export const Alert = ({ setCloseModal, message, isError }: { setCloseModal: any,
                 <div className='z-[999] bg-white text-black rounded-lg flex p-10 flex-col w-[90%] md:w-[50%] lg:w-[40%] overflow-y-auto'>
 
                     <h3 className={`${isError ? "text-red-600" : "text-[#00FF8F]"} text-center font-bold text-2xl mb-4`}>
-                        {isError ? "Error" : "Thank you"}
+                        {isError ? errorTitle : successTitle}
                     </h3>
                     <p className='text-center mb-6 md:px-[10%]'>{message}</p>
 
@@ -27,7 +41,7 @@ export const Alert = ({ setCloseModal, message, isError }: { setCloseModal: any,
                             onClick={() => setCloseModal(false)}
                             type='button'
                         >
-                            Close
+                            {closeButton}
                         </button>
                     </div>
 
