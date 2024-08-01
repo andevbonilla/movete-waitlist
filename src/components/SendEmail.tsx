@@ -70,7 +70,7 @@ export const SendEmail = ({ buttonText, placeholderText, errorLong, errorShort, 
             } else {
                 setisLoading(false);
                 setShowAlert(true);
-                setMessageOfAlert("Sorry, there seems to have been an error, please try again or try again later.");
+                setMessageOfAlert(result.isError);
                 setmessageIsError(true);
                 // error message
             }

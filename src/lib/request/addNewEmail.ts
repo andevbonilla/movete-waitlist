@@ -19,7 +19,7 @@ export const addNewEmail = async (email: string) => {
             };
         };
 
-        if (data.res && data.res === false) {
+        if (data.res === false) {
             return {
                 isError: data.message,
             };
