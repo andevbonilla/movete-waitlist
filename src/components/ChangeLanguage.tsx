@@ -6,7 +6,7 @@ import { useParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 
 
-export const ChangeLanguage = () => {
+export const ChangeLanguage = ({ title }: { title: any }) => {
 
     const params: { locale: string } = useParams();
     const [openLanguageMenu, setopenLanguageMenu] = useState(false);
@@ -28,7 +28,7 @@ export const ChangeLanguage = () => {
                 openLanguageMenu && <div className='z-[997] text-black fixed w-full top-0 bottom-0 left-0 bg-black bg-opacity-25 flex justify-center items-center'>
                     <div onClick={() => { setopenLanguageMenu(false) }} className='cursor-pointer z-[998] fixed w-full top-0 bottom-0 left-0'></div>
                     <div className='bg-white p-10 rounded z-[999] overflow-y-scroll lg:overflow-hidden max-h-[80vh]'>
-                        <h3 className='font-bold mb-8 text-xl'>Change language</h3>
+                        <h3 className='font-bold mb-8 text-xl'>{title}</h3>
                         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4'>
                             <Link href={currentUrl.replace(params.locale, "en")} className={`${(location.pathname.startsWith("/en")) ? "bg-slate-300" : ""} hover:bg-slate-300 transition-all p-4 rounded`}>
                                 English

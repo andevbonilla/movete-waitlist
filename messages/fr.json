@@ -1,5 +1,10 @@
 {
   "HomePage": {
-    "title": "Hello world!"
+    "title": "Vos réalisations en salle de sport, dans les sports et bien plus encore, en un seul lien.",
+    "text": "Movete est le lien que vous pouvez partager sur tous vos autres réseaux sociaux. Vous pourrez y montrer toutes vos réalisations en salle de sport, au football, au basketball, et bien plus encore, recevoir des invitations à vous entraîner et bien plus encore. Qu'attendez-vous ? Rejoignez-nous et faites partie de ce grand projet !",
+    "placeholderText": "Entrez votre adresse e-mail",
+    "buttonText": "Je suis dedans",
+    "changeLanguage": "Changer de langue",
+    "copyright": "Movete © Tous droits réservés."
   }
 }

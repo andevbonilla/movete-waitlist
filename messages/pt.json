@@ -1,5 +1,10 @@
 {
   "HomePage": {
-    "title": "Hello world!"
+    "title": "Suas conquistas na academia, nos esportes e muito mais, em um único link.",
+    "text": "Movete é o link que você pode compartilhar em todas as suas outras redes sociais. Nele, você poderá mostrar todas as suas conquistas na academia, no futebol, no basquete e muito mais, receber convites para treinar e muito mais. O que está esperando? Junte-se a nós e faça parte deste grande projeto!",
+    "placeholderText": "Digite seu e-mail",
+    "buttonText": "Estou dentro",
+    "changeLanguage": "Mudar idioma",
+    "copyright": "Movete © Todos os direitos reservados."
   }
 }

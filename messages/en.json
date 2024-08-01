@@ -1,5 +1,10 @@
 {
   "HomePage": {
-    "title": "Hello world!"
+    "title": "Your achievements in the gym, in sports, and much more, all in one link.",
+    "text": "Movete is the link you can share on all your other social networks. Here, you can showcase all your achievements in the gym, soccer, basketball, and much more, receive invitations to train, and much more. What are you waiting for? Join us and be part of this great project!",
+    "placeholderText": "Enter your email address",
+    "buttonText": "I'm in",
+    "changeLanguage": "Change language",
+    "copyright": "Movete © All rights reserved."
   }
 }

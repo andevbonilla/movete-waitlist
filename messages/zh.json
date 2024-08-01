@@ -1,5 +1,10 @@
 {
   "HomePage": {
-    "title": "Hello world!"
+    "title": "你在健身房、体育运动中的成就以及更多，都在一个链接中。",
+    "text": "Movete 是你可以在所有其他社交网络中分享的链接。在这里，你可以展示你在健身房、足球、篮球等方面的所有成就，接受训练邀请等等。你在等什么？加入我们，成为这个伟大项目的一部分吧！",
+    "placeholderText": "请输入您的电子邮箱",
+    "buttonText": "我加入",
+    "changeLanguage": "切换语言",
+    "copyright": "Movete © 版权所有。"
   }
 }
