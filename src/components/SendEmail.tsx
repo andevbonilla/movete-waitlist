@@ -37,7 +37,7 @@ export const SendEmail = ({
     const [messageOfAlert, setMessageOfAlert] = useState("");
     const [messageIsError, setmessageIsError] = useState(false);
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@(gmail\.com|yahoo\.com|outlook\.com|hotmail\.com|aol\.com)$/;
 
     const realTimeErrorEmail = (e: any) => {
 

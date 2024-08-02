@@ -9,7 +9,6 @@
     "errorEmailLong": "The email is required.",
     "errorEmailShort": "The email is too long, please try another one.",
     "errorEmailInvalid": "The Email is invalid.",
-
     "closeButton": "Close",
     "successTitle": "Thank you",
     "errorTitle": "Error",
